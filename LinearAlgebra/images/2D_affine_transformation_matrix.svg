@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-130 -360 1140 1520">
+ <title>2D affine transformation matrix</title>
+ <desc>Illustration of the effect of applying various 2D affine transformation matrices on a unit square by CMG Lee. Note that the reflection matrices are special cases of the scaling matrix.</desc>
+ <style type="text/css">
+.point_0 { stroke:#009900; fill:#009900; }
+.point_x { stroke:#0000ff; fill:#0000ff; }
+.point_y { stroke:#cc0000; fill:#cc0000; }
+.default { stroke:#000000; fill:#000000; }
+.ghost   { stroke:#999999; fill:#999999; }
+.angle   { stroke:#660099; fill:#cc00ff; }
+.nostroke { stroke:none; }
+ </style>
+ <defs>
+  <g id="square">
+   <circle cx="0"   cy="0"    r="6.4" class="point_0" opacity="0.75"/>
+   <circle cx="100" cy="0"    r="6.4" class="point_x" opacity="0.75"/>
+   <circle cx="0"   cy="-100" r="6.4" class="point_y" opacity="0.75"/>
+   <rect x="0" y="-100" width="100" height="100"/>
+   <path d="M 80,-80 H 20 V -20 H 30 V -45 H 70 V -55 H 30 V -70 H 80 Z" stroke="none" fill="#cc9900" opacity="0.9"/>
+  </g>
+  <path id="axis" d="M -120,0 H 170 m -10,-10 l 10,10 l -10,10 M -100,-10 V 10 M 100,-10 V 10" stroke="#999999"/>
+  <path id="bracket" d="M 0,10 H -10 V 120 H 0"/>
+  <g id="base_matrix" transform="translate(40,-315)">
+   <text x="-50" y="120" class="ghost nostroke">0</text>
+   <text x="0"   y="120" class="ghost nostroke">0</text>
+   <text x="50"  y="120" class="ghost nostroke">1</text>
+   <use xlink:href="#bracket" transform="translate(-80)"/>
+   <use xlink:href="#bracket" transform="translate(80) scale(-1,1)"/>
+  </g>
+  <g id="base">
+   <use xlink:href="#axis"/>
+   <use xlink:href="#axis" transform="rotate(-90)"/>
+   <g stroke="none" fill="#999999">
+    <text x="-20" y="-85">1</text>
+    <text x="-20" y="45">0</text>
+    <text x="100" y="45">1</text>
+    <text x="160" y="45"   font-style="italic">x</text>
+    <text x="-30" y="-160" font-style="italic">y</text>
+   </g>
+   <use xlink:href="#square" stroke-width="3.5" stroke-dasharray="0.1,4.9" fill-opacity="0.4"/>
+  </g>
+ </defs>
+ <g font-family="Helvetica,Arial,sans-serif" font-size="40" letter-spacing="-2" text-anchor="middle" stroke-linecap="round" stroke-linejoin="round" stroke="none" fill="none">
+  <rect x="-4999" y="-4999" width="9999" height="9999" fill="#ffffff"/>
+  <g stroke="#000000" stroke-width="2">
+   <g transform="translate(0,0)">
+    <g transform="translate(0,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#base_matrix"/>
+     <use xlink:href="#square" transform="matrix(1,0 0,1 0,0)"/>
+     <text x="105" y="-15"  text-anchor="start" class="point_x nostroke">(1, 0)</text>
+     <text x="5"   y="-115" text-anchor="start" class="point_y nostroke">(0, 1)</text>
+     <text x="-5" y="-15"   text-anchor="end"   class="point_0 nostroke">(0, 0)</text>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9" class="default nostroke">No change</text>
+      <text x="-50" y="40" class="point_x nostroke">1</text>
+      <text x="-50" y="80" class="point_x nostroke">0</text>
+      <text x="0"   y="40" class="point_y nostroke">0</text>
+      <text x="0"   y="80" class="point_y nostroke">1</text>
+      <text x="50"  y="40" class="point_0 nostroke">0</text>
+      <text x="50"  y="80" class="point_0 nostroke">0</text>
+     </g>
+    </g>
+    <g transform="translate(375,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#base_matrix"/>
+     <use xlink:href="#square" transform="matrix(1,0 0,1 10,-40)"/>
+     <text x="-5" y="-30"  text-anchor="end" class="point_0 nostroke">(X, Y)</text>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9" class="default nostroke">Translate</text>
+      <text x="-50" y="40" class="default nostroke">1</text>
+      <text x="-50" y="80" class="default nostroke">0</text>
+      <text x="0"   y="40" class="default nostroke">0</text>
+      <text x="0"   y="80" class="default nostroke">1</text>
+      <text x="50"  y="40" class="point_0 nostroke">X</text>
+      <text x="50"  y="80" class="point_0 nostroke">Y</text>
+     </g>
+    </g>
+    <g transform="translate(750,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#base_matrix"/>
+     <use xlink:href="#square" transform="matrix(1.2,0 0,1.1 0,0)"/>
+     <text x="125" y="-20"  text-anchor="start" class="point_x nostroke">(W, 0)</text>
+     <text x="5"   y="-125" text-anchor="start" class="point_y nostroke">(0, H)</text>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9" class="default nostroke">Scale about origin</text>
+      <text x="-50" y="40" class="point_x nostroke">W</text>
+      <text x="-50" y="80" class="point_x nostroke">0</text>
+      <text x="0"   y="40" class="point_y nostroke">0</text>
+      <text x="0"   y="80" class="point_y nostroke">H</text>
+      <text x="50"  y="40" class="default nostroke">0</text>
+      <text x="50"  y="80" class="default nostroke">0</text>
+     </g>
+    </g>
+   </g>
+   <g transform="translate(0,500)">
+    <g transform="translate(0,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#square" transform="matrix(0.8,0.6 -0.6,0.8 0,0)"/>
+     <text x="10" y="100"  text-anchor="start" class="point_x nostroke">(cos &#952;, &#8722;sin &#952;)</text>
+     <text x="10" y="-105" text-anchor="start" class="point_y nostroke">(sin &#952;, cos &#952;)</text>
+     <text x="-5" y="-15"  text-anchor="end"   class="angle   nostroke">&#952;</text>
+     <path d="M 0,0 V -40 A 40,40 0 0 1 24,-32 Z" class="angle"/>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9"  class="default nostroke">Rotate about origin</text>
+      <text x="-90" y="40"  class="point_x nostroke">cos &#952;</text>
+      <text x="-90" y="80"  class="point_x nostroke">&#8722;sin &#952;</text>
+      <text x="35"  y="40"  class="point_y nostroke">sin &#952;</text>
+      <text x="35"  y="80"  class="point_y nostroke">cos &#952;</text>
+      <text x="120" y="40"  class="default nostroke">0</text>
+      <text x="120" y="80"  class="default nostroke">0</text>
+      <text x="-90" y="120" class="ghost nostroke">0</text>
+      <text x="35"  y="120" class="ghost nostroke">0</text>
+      <text x="120" y="120" class="ghost nostroke">1</text>
+      <use xlink:href="#bracket" transform="translate(-150)"/>
+      <use xlink:href="#bracket" transform="translate(150) scale(-1,1)"/>
+     </g>
+    </g>
+    <g transform="translate(375,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#square" transform="matrix(1,0 -0.5,1 0,0)"/>
+     <text x="120" y="-10"  text-anchor="start" class="point_x nostroke">(1, 0)</text>
+     <text x="20"  y="-115" text-anchor="start" class="point_y nostroke">(tan &#981;, 1)</text>
+     <text x="-5"  y="-15"  text-anchor="end"   class="angle   nostroke">&#981;</text>
+     <path d="M 0,0 V -40 A 40,40 0 0 1 18,-36 Z" class="angle"/>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9"  class="default nostroke">Shear in x direction</text>
+      <text x="-80" y="40"  class="point_x nostroke">1</text>
+      <text x="-80" y="80"  class="point_x nostroke">0</text>
+      <text x="0"   y="40"  class="point_y nostroke">tan &#981;</text>
+      <text x="0"   y="80"  class="point_y nostroke">1</text>
+      <text x="80"  y="40"  class="default nostroke">0</text>
+      <text x="80"  y="80"  class="default nostroke">0</text>
+      <text x="-80" y="120" class="ghost nostroke">0</text>
+      <text x="0"   y="120" class="ghost nostroke">0</text>
+      <text x="80"  y="120" class="ghost nostroke">1</text>
+      <use xlink:href="#bracket" transform="translate(-110)"/>
+      <use xlink:href="#bracket" transform="translate(110) scale(-1,1)"/>
+     </g>
+    </g>
+    <g transform="translate(750,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#square" transform="matrix(1,-0.5 0,1 0,0)"/>
+     <text x="120" y="-25"  text-anchor="start" class="point_x nostroke" transform="scale(0.9,1)">(1, tan &#968;)</text>
+     <text x="-2"  y="-120" text-anchor="end"   class="point_y nostroke">(0, 1)</text>
+     <text x="20"  y="35"   text-anchor="start" class="angle   nostroke">&#968;</text>
+     <path d="M 0,0 H 40 A 40,40 0 0 0 36,-18" class="angle"/>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9"  class="default nostroke">Shear in y direction</text>
+      <text x="-55" y="40"  class="point_x nostroke">1</text>
+      <text x="-55" y="80"  class="point_x nostroke">tan &#968;</text>
+      <text x="25"  y="40"  class="point_y nostroke">0</text>
+      <text x="25"  y="80"  class="point_y nostroke">1</text>
+      <text x="80"  y="40"  class="default nostroke">0</text>
+      <text x="80"  y="80"  class="default nostroke">0</text>
+      <text x="-55" y="120" class="ghost nostroke">0</text>
+      <text x="25"  y="120" class="ghost nostroke">0</text>
+      <text x="80"  y="120" class="ghost nostroke">1</text>
+      <use xlink:href="#bracket" transform="translate(-110)"/>
+      <use xlink:href="#bracket" transform="translate(110) scale(-1,1)"/>
+     </g>
+    </g>
+   </g>
+   <g transform="translate(0,1040)">
+    <g transform="translate(0,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#base_matrix"/>
+     <use xlink:href="#square" transform="matrix(-1,0 0,-1 0,0)"/>
+     <text x="-125" y="-15" text-anchor="start" class="point_x nostroke">(&#8722;1, 0)</text>
+     <text x="10"   y="100" text-anchor="start" class="point_y nostroke">(0, &#8722;1)</text>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9" class="default nostroke">Reflect about origin</text>
+      <text x="-50" y="40" class="point_x nostroke">&#8722;1</text>
+      <text x="-50" y="80" class="point_x nostroke">0</text>
+      <text x="0"   y="40" class="point_y nostroke">0</text>
+      <text x="0"   y="80" class="point_y nostroke">&#8722;1</text>
+      <text x="50"  y="40" class="default nostroke">0</text>
+      <text x="50"  y="80" class="default nostroke">0</text>
+     </g>
+    </g>
+    <g transform="translate(375,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#base_matrix"/>
+     <use xlink:href="#square" transform="matrix(1,0 0,-1 0,0)"/>
+     <text x="105"  y="-15" text-anchor="start" class="point_x nostroke">(1, 0)</text>
+     <text x="-10"  y="100" text-anchor="end"   class="point_y nostroke">(0, &#8722;1)</text>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9" class="default nostroke">Reflect about x-axis</text>
+      <text x="-50" y="40" class="point_x nostroke">1</text>
+      <text x="-50" y="80" class="point_x nostroke">0</text>
+      <text x="0"   y="40" class="point_y nostroke">0</text>
+      <text x="0"   y="80" class="point_y nostroke">&#8722;1</text>
+      <text x="50"  y="40" class="default nostroke">0</text>
+      <text x="50"  y="80" class="default nostroke">0</text>
+     </g>
+    </g>
+    <g transform="translate(750,0)">
+     <use xlink:href="#base"/>
+     <use xlink:href="#base_matrix"/>
+     <use xlink:href="#square" transform="matrix(-1,0 0,1 0,0)"/>
+     <text x="-60"  y="45"   text-anchor="end"   class="point_x nostroke">(&#8722;1, 0)</text>
+     <text x="10"   y="-115" text-anchor="start" class="point_y nostroke">(0, 1)</text>
+     <g transform="translate(40,-315)">
+      <text x="0"   y="-9" class="default nostroke">Reflect about y-axis</text>
+      <text x="-50" y="40" class="point_x nostroke">&#8722;1</text>
+      <text x="-50" y="80" class="point_x nostroke">0</text>
+      <text x="0"   y="40" class="point_y nostroke">0</text>
+      <text x="0"   y="80" class="point_y nostroke">1</text>
+      <text x="50"  y="40" class="default nostroke">0</text>
+      <text x="50"  y="80" class="default nostroke">0</text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

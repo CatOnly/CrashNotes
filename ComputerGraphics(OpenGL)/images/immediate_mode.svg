@@ -1,0 +1,347 @@
+
+<!DOCTYPE svg
+  PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="616"
+     height="141">
+   <defs>
+      <linearGradient id="c" gradientTransform="matrix(2.9 0 0 1 -901.104 163.066)">
+         <stop offset="0" stop-color="#11809f"/>
+      </linearGradient>
+      <linearGradient id="d"
+                      gradientTransform="matrix(-10.6993 0 0 -1.33333 -188.501 8374.47)">
+         <stop offset="0" stop-color="#333e48"/>
+      </linearGradient>
+      <linearGradient id="b" gradientTransform="translate(100)">
+         <stop offset="0" stop-color="#e5eceb"/>
+      </linearGradient>
+      <linearGradient id="a" gradientTransform="translate(90)">
+         <stop offset="0" stop-color="#fff"/>
+      </linearGradient>
+      <linearGradient id="f" gradientTransform="matrix(1.81333 0 0 1 3366.847 1882.157)">
+         <stop offset="0" stop-color="#ff6b00"/>
+      </linearGradient>
+      <linearGradient id="i" gradientTransform="matrix(2.23806 0 0 1.33333 759.003 339.72)">
+         <stop offset="0" stop-color="#95d600"/>
+      </linearGradient>
+      <linearGradient id="e"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(-22.609 1.763)"/>
+      <linearGradient id="g"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(109.634 2.479)"/>
+      <linearGradient id="h"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(329.229 1.772)"/>
+      <linearGradient id="j"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(-24.754 91.763)"/>
+      <linearGradient id="k"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(255.325 91.772)"/>
+      <linearGradient id="l"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(404.229 84.772)"/>
+      <linearGradient id="m"
+                      xlink:href="#a"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(404.877 99.272)"/>
+   </defs>
+   <path fill="url(#b)"
+         fill-rule="evenodd"
+         stroke="url(#b)"
+         d="M-84.754 83.066h615v50h-615zM-84.754-6.934h615v50h-615z"
+         transform="translate(85.254 7.434)"/>
+   <path fill="url(#c)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         d="M-29.754-1.934h115v40h-115z"
+         transform="translate(85.254 7.434)"/>
+   <text x="27.696"
+         y="22.822"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#e)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="27.696"
+             y="22.822"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">Vertex Shader</tspan>
+   </text>
+   <path fill="url(#f)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         d="M125.246-1.934h70v40h-70z"
+         transform="translate(85.254 7.434)"/>
+   <text x="159.939"
+         y="23.538"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#g)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="159.939"
+             y="23.538"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">FIFO</tspan>
+   </text>
+   <path d="M175.5 25.5h25"
+         fill="#333e48"
+         fill-rule="evenodd"
+         stroke="#333e48"
+         stroke-width="2.806"/>
+   <path d="M110.246 13.066l10 5-10 5z"
+         fill="url(#d)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         stroke-linejoin="round"
+         transform="translate(85.254 7.434)"/>
+   <path fill="url(#c)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         d="M235.247-1.934h290v40h-290z"
+         transform="translate(85.254 7.434)"/>
+   <text x="379.534"
+         y="22.831"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#h)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="379.534"
+             y="22.831"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">Fragment Shader</tspan>
+   </text>
+   <path d="M285.5 25.5h25"
+         fill="#333e48"
+         fill-rule="evenodd"
+         stroke="#333e48"
+         stroke-width="2.806"/>
+   <path d="M220.246 13.066l10 5-10 5z"
+         fill="url(#d)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         stroke-linejoin="round"
+         transform="translate(85.254 7.434)"/>
+   <path fill="url(#i)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         d="M-29.754 88.066h110v40h-110z"
+         transform="translate(85.254 7.434)"/>
+   <text x="25.551"
+         y="112.822"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#j)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="25.551"
+             y="112.822"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">Attributes</tspan>
+   </text>
+   <path fill="url(#i)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         d="M235.246 88.066h140v40h-140z"
+         transform="translate(85.254 7.434)"/>
+   <text x="305.63"
+         y="112.831"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#k)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="305.63"
+             y="112.831"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">Textures</tspan>
+   </text>
+   <path fill="url(#f)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         d="M385.246 88.066h140v40h-140z"
+         transform="translate(85.254 7.434)"/>
+   <text x="454.534"
+         y="105.831"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#l)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="454.534"
+             y="105.831"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">Framebuffer</tspan>
+   </text>
+   <text x="455.182"
+         y="120.331"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'sans-serif, Normal'"
+         font-size="14.667"
+         font-weight="400"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#m)"
+         font-family="sans-serif"
+         transform="translate(85.254 7.434)">
+      <tspan x="455.182"
+             y="120.331"
+             style="text-align:center;-inkscape-font-specification:'sans-serif, Normal'">Working Set</tspan>
+   </text>
+   <text x="-55.035"
+         y="22.322"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'Lato, Bold'"
+         font-size="14.667"
+         font-weight="700"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#d)"
+         font-family="Lato"
+         transform="translate(85.254 7.434)">
+      <tspan x="-55.035"
+             y="22.322"
+             style="text-align:center;-inkscape-font-specification:'Lato, Bold'">GPU</tspan>
+   </text>
+   <text x="-54.785"
+         y="112.822"
+         style="text-align:center;line-height:0%;-inkscape-font-specification:'Lato, Bold'"
+         font-size="14.667"
+         font-weight="700"
+         letter-spacing="0"
+         word-spacing="0"
+         text-anchor="middle"
+         fill="url(#d)"
+         font-family="Lato"
+         transform="translate(85.254 7.434)">
+      <tspan x="-54.785"
+             y="112.822"
+             style="text-align:center;-inkscape-font-specification:'Lato, Bold'">DDR</tspan>
+   </text>
+   <path d="M113 85.5v-25"
+         fill="#333e48"
+         fill-rule="evenodd"
+         stroke="#333e48"
+         stroke-width="2.806"/>
+   <path d="M32.746 58.066l-5-10-5 10z"
+         fill="url(#d)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         stroke-linejoin="round"
+         transform="translate(85.254 7.434)"/>
+   <path d="M390.5 85.5v-25"
+         fill="#333e48"
+         fill-rule="evenodd"
+         stroke="#333e48"
+         stroke-width="2.806"/>
+   <path d="M310.247 58.066l-5-10-5 10z"
+         fill="url(#d)"
+         fill-rule="evenodd"
+         stroke="url(#d)"
+         stroke-linejoin="round"
+         transform="translate(85.254 7.434)"/>
+   <g fill-rule="evenodd">
+      <path d="M533 55.5v25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M490.246 148.066l10 5-10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 550.406 135.66)"/>
+      <path d="M523 85.5v-25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M480.246 158.066l-10 5 10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 550.406 135.66)"/>
+      <path d="M513 55.5v25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M490.246 168.066l10 5-10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 550.406 135.66)"/>
+      <path d="M503 85.5v-25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M480.246 178.066l-10 5 10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 550.406 135.66)"/>
+   </g>
+   <g fill-rule="evenodd">
+      <path d="M573 55.5v25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M490.246 148.066l10 5-10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 570.406 155.66)"/>
+      <path d="M563 85.5v-25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M480.246 158.066l-10 5 10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 570.406 155.66)"/>
+      <path d="M553 55.5v25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M490.246 168.066l10 5-10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 570.406 155.66)"/>
+      <path d="M543 85.5v-25"
+            fill="#333e48"
+            stroke="#333e48"
+            stroke-width="2.806"/>
+      <path d="M480.246 178.066l-10 5 10 5z"
+            fill="url(#d)"
+            stroke="url(#d)"
+            stroke-linejoin="round"
+            transform="rotate(90 570.406 155.66)"/>
+   </g>
+</svg>
