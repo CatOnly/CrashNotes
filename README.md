@@ -21,7 +21,7 @@ This notes written in [Typora](https://www.typora.io/). It is also recommended t
 ## Project
 
 1. [GMath](https://github.com/CatOnly/GMath): Practice of Linear algebra, Euler angle and Quaternion
-2. [DrawEasy3D](https://github.com/CatOnly/DrawEasy3D): Practice of *GMath*、OpenGL and Digital image processing
+2. [ErosViewer](https://github.com/CatOnly/ErosViewer): Practice of *GMath*、OpenGL and Digital image processing
 
 
 
